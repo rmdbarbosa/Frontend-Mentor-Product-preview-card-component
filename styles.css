@@ -1,0 +1,121 @@
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  max-height: 700px;
+  max-width: 700px;
+}
+
+.main__img {
+  background-image: url(/images/image-product-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 1rem 1rem 0px 0px;
+}
+
+.main__perfume {
+  letter-spacing: 0.3rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
+}
+
+.main__text {
+  padding: 1.5rem;
+}
+
+.main__title > h1 {
+  font-family: "Fraunces", serif;
+}
+
+.main__description {
+  line-height: 1.4rem;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+
+.main__price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.price__left {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+}
+.price__slashed {
+  color: hsl(228, 12%, 48%);
+  scale: 80%;
+}
+
+svg {
+  margin-right: 0.5rem;
+}
+
+.main__button > button {
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border-style: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(0.9);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left: -200px;
+  width: 400px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 720px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .main__img {
+    background-image: url(/images/image-product-desktop.jpg);
+    height: 450px;
+    width: 400px;
+    border-radius: 1rem 0rem 0px 1rem;
+    background-size: cover;
+  }
+
+  .main__description {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+  }
+}
